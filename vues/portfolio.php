@@ -165,7 +165,7 @@
         var inxWorstPerformer = 0;
         var inxBestPerformer = 0;
         for (let i = 0; i < allSymb.length; i++) {
-            fetch('https://cloud.iexapis.com/stable/stock/' + allSymb[i].innerHTML + '/quote?token=pk_b192dc66d82a4331bd8f0c93ccb4519a')
+            fetch('https://cloud.iexapis.com/stable/stock/' + allSymb[i].innerHTML + '/quote?token=TOKEN')
                 .then((response) => {
                     if (!response.ok) {
                         return;
