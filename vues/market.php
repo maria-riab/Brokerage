@@ -118,7 +118,7 @@
 <script language="JavaScript" type="text/javascript">
     $("#btnQuote").click(function(event) {
         event.preventDefault();
-        fetch('https://cloud.iexapis.com/stable/stock/' + $('#symbolInput').val() + '/quote?token=pk_b192dc66d82a4331bd8f0c93ccb4519a')
+        fetch('https://cloud.iexapis.com/stable/stock/' + $('#symbolInput').val() + '/quote?token=TOKEN')
             .then((response) => {
                 if (!response.ok) {
                     $('#errorsBro').css('display', 'block');
